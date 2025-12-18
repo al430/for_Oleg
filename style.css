@@ -115,3 +115,69 @@ footer {
   color: #333;
   border-top: 1px solid #ddd;
 }
+
+.header_section {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 1rem 2rem;
+    flex-wrap: nowrap;
+}
+
+.header_logo {
+    height: 40px; /* подстрой под свой логотип */
+    width: auto;
+}
+
+.main_menu {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 1.5rem; /* расстояние между пунктами меню */
+    white-space: nowrap;
+}
+
+.menu-item,
+.main_menu li {
+    display: inline-block;
+    margin: 0;
+    list-style: none;
+}
+
+.menu-item a,
+.main_menu a {
+    text-decoration: none;
+    color: #333;
+    font-weight: 500;
+    transition: color 0.2s;
+}
+
+.menu-item a:hover,
+.main_menu a:hover {
+    color: #0073aa;
+}
+
+.search {
+    flex-shrink: 0;
+    white-space: nowrap;
+}
+
+.search form {
+    display: flex;
+    gap: 0.5rem;
+}
+
+.search input[type="search"],
+.search input[type="text"] {
+    padding: 0.4rem 0.8rem;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+}
+
+.search button {
+    padding: 0.4rem 0.8rem;
+    background: #f0f0f0;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    cursor: pointer;
+}
